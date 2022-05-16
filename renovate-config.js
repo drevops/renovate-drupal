@@ -44,7 +44,6 @@ module.exports = {
         {
             "groupName": "All Contrib",
             "groupSlug": "all-contrib",
-            "schedule": ["every weekend"],
             "matchDatasources": ["packagist"],
             "separateMajorMinor": false,
             "matchPackagePatterns": [".*"],
