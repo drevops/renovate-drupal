@@ -7,6 +7,9 @@ Object.assign(process.env, {
 
 module.exports = {
     platform: 'github',
+    repositories: [
+        "drevops/renovate-circleci-drupal-example"
+    ],
     "branchPrefix": "deps/",
     "labels": ["dependencies", "Dependencies"],
     "assignees": [
