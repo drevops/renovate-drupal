@@ -8,6 +8,8 @@ aliases:
         environment:
           DEPLOY_SSH_FINGERPRINT: *deploy_ssh_fingerprint
           RENOVATE_CONFIG_FILE: renovate-config.js
+          RENOVATE_AUTODISCOVER: false
+          LOG_LEVEL: debug
 
   - &step_setup_git
     run:
