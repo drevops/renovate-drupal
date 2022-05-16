@@ -1,0 +1,18 @@
+##
+# Renovate Bot self-hosted instance configuration for CircleCI.
+#
+# Add RENOVATE_TOKEN as an environment variable with GitHub access token in UI.
+version: 2
+jobs:
+  build:
+    docker:
+      - image: renovate/renovate:latest
+        environment:
+          RENOVATE_CONFIG_FILE: renovate-config.js
+          RENOVATE_DEPENDENCY_DASHBOARD: true
+          RENOVATE_AUTODISCOVER: false
+          LOG_LEVEL: warn
+    steps:
+      - checkout
+      - run: renovate-config-validator
+      - run: renovate
