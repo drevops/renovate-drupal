@@ -1,0 +1,16 @@
+version: '2.1'
+orbs:
+  renovate: daniel-shuy/renovate@3.1
+
+workflows:
+  renovate:
+    jobs:
+      - renovate/self-hosted:
+          config_file_path: renovate-config.js
+    triggers:
+      - schedule:
+          cron: 0/5 * * * *
+          filters:
+            branches:
+              only:
+                - master
