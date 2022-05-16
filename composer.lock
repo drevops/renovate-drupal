@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "47ce162ab7772d6d6ab12a1e44876381",
+    "content-hash": "6c54ab5fa7a04ac3557701e61bada98c",
     "packages": [
         {
             "name": "asm89/stack-cors",
@@ -116,39 +116,37 @@
         },
         {
             "name": "composer/installers",
-            "version": "v1.12.0",
+            "version": "v2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/composer/installers.git",
-                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19"
+                "reference": "af93ba6e52236418f07a278033eba6959ee5b983"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/composer/installers/zipball/d20a64ed3c94748397ff5973488761b22f6d3f19",
-                "reference": "d20a64ed3c94748397ff5973488761b22f6d3f19",
+                "url": "https://api.github.com/repos/composer/installers/zipball/af93ba6e52236418f07a278033eba6959ee5b983",
+                "reference": "af93ba6e52236418f07a278033eba6959ee5b983",
                 "shasum": ""
             },
             "require": {
-                "composer-plugin-api": "^1.0 || ^2.0"
-            },
-            "replace": {
-                "roundcube/plugin-installer": "*",
-                "shama/baton": "*"
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
             },
             "require-dev": {
                 "composer/composer": "1.6.* || ^2.0",
                 "composer/semver": "^1 || ^3",
                 "phpstan/phpstan": "^0.12.55",
                 "phpstan/phpstan-phpunit": "^0.12.16",
-                "symfony/phpunit-bridge": "^4.2 || ^5",
-                "symfony/process": "^2.3"
+                "symfony/phpunit-bridge": "^5.3",
+                "symfony/process": "^5"
             },
             "type": "composer-plugin",
             "extra": {
                 "class": "Composer\\Installers\\Plugin",
                 "branch-alias": {
-                    "dev-main": "1.x-dev"
-                }
+                    "dev-main": "2.x-dev"
+                },
+                "plugin-modifies-install-path": true
             },
             "autoload": {
                 "psr-4": {
@@ -169,7 +167,6 @@
             "description": "A multi-framework Composer library installer",
             "homepage": "https://composer.github.io/installers/",
             "keywords": [
-                "Craft",
                 "Dolibarr",
                 "Eliasis",
                 "Hurad",
@@ -190,7 +187,6 @@
                 "Whmcs",
                 "WolfCMS",
                 "agl",
-                "aimeos",
                 "annotatecms",
                 "attogram",
                 "bitrix",
@@ -209,7 +205,6 @@
                 "grav",
                 "installer",
                 "itop",
-                "joomla",
                 "known",
                 "kohana",
                 "laravel",
@@ -237,9 +232,7 @@
                 "silverstripe",
                 "sydes",
                 "sylius",
-                "symfony",
                 "tastyigniter",
-                "typo3",
                 "wordpress",
                 "yawik",
                 "zend",
@@ -247,7 +240,7 @@
             ],
             "support": {
                 "issues": "https://github.com/composer/installers/issues",
-                "source": "https://github.com/composer/installers/tree/v1.12.0"
+                "source": "https://github.com/composer/installers/tree/v2.1.1"
             },
             "funding": [
                 {
@@ -263,7 +256,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-09-13T08:19:44+00:00"
+            "time": "2022-04-13T09:13:00+00:00"
         },
         {
             "name": "composer/semver",
@@ -1286,16 +1279,16 @@
         },
         {
             "name": "drevops/renovate-example-source",
-            "version": "1.0.0",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drevops/renovate-example-source.git",
-                "reference": "22bf41385121befeb05d56a73f5c760a1206052d"
+                "reference": "078ee43da24f2fb2954c09359f822394e9246d7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drevops/renovate-example-source/zipball/22bf41385121befeb05d56a73f5c760a1206052d",
-                "reference": "22bf41385121befeb05d56a73f5c760a1206052d",
+                "url": "https://api.github.com/repos/drevops/renovate-example-source/zipball/078ee43da24f2fb2954c09359f822394e9246d7a",
+                "reference": "078ee43da24f2fb2954c09359f822394e9246d7a",
                 "shasum": ""
             },
             "type": "library",
@@ -1309,22 +1302,22 @@
             "description": "A test package to test Renovate config. Used to trigger release updates.",
             "support": {
                 "issues": "https://github.com/drevops/renovate-example-source/issues",
-                "source": "https://github.com/drevops/renovate-example-source/tree/1.0.0"
+                "source": "https://github.com/drevops/renovate-example-source/tree/1.0.4"
             },
-            "time": "2022-04-22T05:22:49+00:00"
+            "time": "2022-05-02T10:16:27+00:00"
         },
         {
             "name": "drevops/renovate-example-source2",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drevops/renovate-example-source2.git",
-                "reference": "42fa331a887d1a67db93e827d90158ffc5399851"
+                "reference": "e09001af53c9b5f1227225f8b754b6f93bbbb49a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drevops/renovate-example-source2/zipball/42fa331a887d1a67db93e827d90158ffc5399851",
-                "reference": "42fa331a887d1a67db93e827d90158ffc5399851",
+                "url": "https://api.github.com/repos/drevops/renovate-example-source2/zipball/e09001af53c9b5f1227225f8b754b6f93bbbb49a",
+                "reference": "e09001af53c9b5f1227225f8b754b6f93bbbb49a",
                 "shasum": ""
             },
             "type": "library",
@@ -1338,23 +1331,23 @@
             "description": "A test package to test Renovate config. Used to trigger release updates.",
             "support": {
                 "issues": "https://github.com/drevops/renovate-example-source2/issues",
-                "source": "https://github.com/drevops/renovate-example-source2/tree/1.0.0"
+                "source": "https://github.com/drevops/renovate-example-source2/tree/1.2.0"
             },
-            "time": "2022-04-22T05:28:41+00:00"
+            "time": "2022-05-02T10:15:59+00:00"
         },
         {
             "name": "drupal/coffee",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coffee.git",
-                "reference": "8.x-1.0"
+                "reference": "8.x-1.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/coffee-8.x-1.0.zip",
-                "reference": "8.x-1.0",
-                "shasum": "55ae2303a5a125fb1b6a2d2c32ef41c05c905e8a"
+                "url": "https://ftp.drupal.org/files/projects/coffee-8.x-1.2.zip",
+                "reference": "8.x-1.2",
+                "shasum": "3c3f251004ec0d0995a86407592f7f54872ebe87"
             },
             "require": {
                 "drupal/core": "^8 || ^9"
@@ -1362,8 +1355,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "8.x-1.0",
-                    "datestamp": "1586890651",
+                    "version": "8.x-1.2",
+                    "datestamp": "1617351412",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -7777,16 +7770,16 @@
         },
         {
             "name": "drevops/renovate-example-source3",
-            "version": "1.0.0",
+            "version": "3.0.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drevops/renovate-example-source3.git",
-                "reference": "23c12aa903c4da23093875d12d3b2255649f87b0"
+                "reference": "33f1353f86eb26c04f05a8f7289b520e12097606"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drevops/renovate-example-source3/zipball/23c12aa903c4da23093875d12d3b2255649f87b0",
-                "reference": "23c12aa903c4da23093875d12d3b2255649f87b0",
+                "url": "https://api.github.com/repos/drevops/renovate-example-source3/zipball/33f1353f86eb26c04f05a8f7289b520e12097606",
+                "reference": "33f1353f86eb26c04f05a8f7289b520e12097606",
                 "shasum": ""
             },
             "type": "library",
@@ -7800,9 +7793,9 @@
             "description": "A test package to test Renovate config. Used to trigger release updates.",
             "support": {
                 "issues": "https://github.com/drevops/renovate-example-source3/issues",
-                "source": "https://github.com/drevops/renovate-example-source3/tree/1.0.0"
+                "source": "https://github.com/drevops/renovate-example-source3/tree/3.0.0"
             },
-            "time": "2022-04-27T08:23:59+00:00"
+            "time": "2022-05-02T10:14:35+00:00"
         },
         {
             "name": "drupal/coder",
@@ -7851,7 +7844,7 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "9.3.12",
+            "version": "9.3.13",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
@@ -7895,7 +7888,7 @@
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/9.3.12"
+                "source": "https://github.com/drupal/core-dev/tree/9.3.13"
             },
             "time": "2021-11-30T05:41:29+00:00"
         },
@@ -11277,5 +11270,5 @@
     "platform-overrides": {
         "php": "8.0"
     },
-    "plugin-api-version": "2.2.0"
+    "plugin-api-version": "2.3.0"
 }
