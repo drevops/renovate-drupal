@@ -4,7 +4,7 @@
 # Add RENOVATE_TOKEN as an environment variable with GitHub access token in UI.
 version: 2
 jobs:
-  build:
+  renovatebot:
     docker:
       - image: renovate/renovate:latest
         environment:
@@ -20,3 +20,16 @@ jobs:
       - checkout
       - run: renovate-config-validator
       - run: renovate
+
+workflows:
+  version: 2
+  renovatebot:
+    triggers:
+      - schedule:
+          cron: "15 * * * *"
+          filters:
+            branches:
+              only:
+                - main
+    jobs:
+      - renovatebot
