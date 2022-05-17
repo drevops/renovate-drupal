@@ -7,9 +7,9 @@
     ],
     "ignorePresets": [":prHourlyLimit2"],
     "rangeStrategy": "update-lockfile",
+    "enabledManagers": ["composer"],
     "packageRules": [
         {
-            "datasources": ["packagist"],
             "groupName": "Minor and Patch Core",
             "groupSlug": "minor-patch-core",
             "schedule": ["before 2am"],
@@ -22,7 +22,6 @@
             ]
         },
         {
-            "datasources": ["packagist"],
             "groupName": "Major Core - skipped to update manually",
             "matchDatasources": ["packagist"],
             "matchUpdateTypes": ["major"],
@@ -34,7 +33,6 @@
             "enabled": false
         },
         {
-            "datasources": ["packagist"],
             "groupName": "All Contrib",
             "groupSlug": "all-contrib",
             "matchDatasources": ["packagist"],
