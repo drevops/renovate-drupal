@@ -23,6 +23,13 @@ jobs:
 
 workflows:
   version: 2
+  feature:
+    jobs:
+      - renovatebot:
+          filters:
+            branches:
+              only: /feature\/.+/
+
   renovatebot:
     triggers:
       - schedule:
