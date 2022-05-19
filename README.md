@@ -1,9 +1,8 @@
-# renovate-circleci-drupal-example
-Example to run Renovate bot on a Drupal project.
+# Example to run RenovateBot for Drupal project as a self-hosted instance in CircleCI.
 
 ## Features
-
-1. 2 schedules: 
+1. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
+2. 2 schedules: 
    1. Minor and patch versions for critical Drupal core and related packages to 
       run daily raised in `deps/minor-patch-core` branch.
    2. All versions for all other packages to run weekly raised in 
@@ -36,7 +35,3 @@ Example to run Renovate bot on a Drupal project.
   - drush/drush (10.* => 11.*)
   - drevops/renovate-example-source3 (1.* => 3.*)
 ```
-
----
-
-See https://github.com/drevops/renovate-example for more examples.
