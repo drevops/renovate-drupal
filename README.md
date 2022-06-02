@@ -1,4 +1,4 @@
-# Example to run RenovateBot for Drupal project as a self-hosted instance in CircleCI.
+# Self-hosted RenovateBot for Drupal
 
 ## Features
 1. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
