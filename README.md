@@ -1,5 +1,8 @@
 # Self-hosted RenovateBot for Drupal
 
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/drevops/renovate-circleci-drupal-example)
+![LICENSE](https://img.shields.io/github/license/drevops/renovate-circleci-drupal-example)
+
 ## Features
 1. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
 2. 2 schedules: 
