@@ -28,7 +28,8 @@
             "matchPackageNames": [
                 "drupal/core-composer-scaffold",
                 "drupal/core-project-message",
-                "drupal/core-recommended"
+                "drupal/core-recommended",
+                "drush/drush"
             ],
             "enabled": false
         },
@@ -41,7 +42,8 @@
             "excludePackageNames": [
                 "drupal/core-composer-scaffold",
                 "drupal/core-project-message",
-                "drupal/core-recommended"
+                "drupal/core-recommended",
+                "drush/drush"
             ]
         }
     ]
