@@ -1,6 +1,6 @@
 # Self-hosted RenovateBot for Drupal
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/drevops/renovate-drupal-example/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/drevops/renovate-drupal-example/tree/main)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/drevops/renovate-circleci-drupal-example/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/drevops/renovate-circleci-drupal-example/tree/main)
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/drevops/renovate-drupal-example)
 ![LICENSE](https://img.shields.io/github/license/drevops/renovate-drupal-example)
 
