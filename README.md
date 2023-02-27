@@ -5,14 +5,14 @@
 ![LICENSE](https://img.shields.io/github/license/drevops/renovate-circleci-drupal-example)
 
 ## Features
-1. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
-2. 2 schedules:
+1. 2 schedules:
    1. Minor and patch versions for critical Drupal core and related packages to
       run daily raised in `deps/minor-patch-core` branch.
    2. Minor and patch for all other packages to run weekly raised in
       `deps/all-contrib` branch.
 2. Add a custom label `dependencies` on PR creation.
 3. Add assignees on PR creation.
+4. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
 
 ## Installation
 
