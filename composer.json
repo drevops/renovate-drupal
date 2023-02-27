@@ -24,7 +24,7 @@
     },
     "require-dev": {
         "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-        "drupal/core-dev": "^9",
+        "drupal/core-dev": "^10",
         "drupal/drupal-extension": "^4",
         "drevops/renovate-example-source3": "^1"
     },
