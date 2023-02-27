@@ -17,7 +17,10 @@
 ## Installation
 
 1. Copy jobs from `.circleci/config.yml` to your CI config
-2. Create GitHub access token and add it as a value for `RENOVATE_TOKEN` environment variable in CircleCI UI.
+2. Create GitHub read/write access token and add it as a value for `RENOVATE_TOKEN` environment variable in CircleCI UI. This is used to submit PRs and update Renovate dashboard issues.
+3. Create GitHub read-only access token and add it as a value for `GITHUB_COM_TOKEN` environment variable in CircleCI UI. This is used to overcome GitHub API rate limit when Renovate downloads information aboout your packages.
+
+Read more about environment variables [Renovate Authentication](https://docs.renovatebot.com/examples/self-hosting/#circleci).
 
 ## Expected minor and patch updates for core
 
