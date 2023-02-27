@@ -16,13 +16,32 @@
 
 ## Installation
 
-1. Copy jobs from `.circleci/config.yml` to your CI config
-2. Create GitHub read/write access token and add it as a value for `RENOVATE_TOKEN` environment variable in CircleCI UI. This is used to submit PRs and update Renovate dashboard issues.
-3. Create GitHub read-only access token and add it as a value for `GITHUB_COM_TOKEN` environment variable in CircleCI UI. This is used to overcome GitHub API rate limit when Renovate downloads information aboout your packages.
+Renovate can run as hosted GitHub app or as a standalone service in your CI provider.
+
+### Hosted GitHub app
+
+1. Copy `renovate.json` to your repository.
+2. Follow steps in [the official Renovate docs](https://docs.renovatebot.com/getting-started/installing-onboarding/).
+
+### Self-hosted on CircleCI
+
+1. Copy `renovate.json` to your repository.
+2. Copy jobs from `.circleci/config.yml` to your CI config.
+3. Create GitHub read/write access token and add it as a value for `RENOVATE_TOKEN` environment variable in CircleCI UI. This is used to submit PRs and update Renovate dashboard issues.
+4. Create GitHub read-only access token and add it as a value for `GITHUB_COM_TOKEN` environment variable in CircleCI UI. This is used to overcome GitHub API rate limit when Renovate downloads information aboout your packages.
 
 Read more about environment variables [Renovate Authentication](https://docs.renovatebot.com/examples/self-hosting/#circleci).
 
-## Expected minor and patch updates for core
+## Testing
+
+Provided `composer.json` and `composer.lock` are used to test Renovates configuration.
+
+Note that in addition to Drupal and Composer packages, we are using 3 custom (empty) packages with specific versions:
+- https://github.com/drevops/renovate-example-source1
+- https://github.com/drevops/renovate-example-source2
+- https://github.com/drevops/renovate-example-source3
+
+**Expected minor and patch updates for core**
 
 ```
   - drupal/core-composer-scaffold (9.2.0 -> 9.3.13)
@@ -30,7 +49,7 @@ Read more about environment variables [Renovate Authentication](https://docs.ren
   - drupal/core-recommended	(9.3.12 -> 9.3.13)
 ```
 
-## Expected minor and patch updates for contribs
+**Expected minor and patch updates for contribs**
 
 ```
   - drevops/renovate-example-source (1.0.0 => 1.0.4)
@@ -46,7 +65,7 @@ Read more about environment variables [Renovate Authentication](https://docs.ren
   - vlucas/phpdotenv (v5.0.0 => v5.4.1)
 ```
 
-Should not update
+**Should not update**
 
 ```
   - drush/drush (10.* => 11.*) - Drush updates are excluded
