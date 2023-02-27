@@ -1,8 +1,8 @@
 # Self-hosted RenovateBot for Drupal
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/drevops/renovate-circleci-drupal-example/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/drevops/renovate-circleci-drupal-example/tree/main)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/drevops/renovate-circleci-drupal-example)
-![LICENSE](https://img.shields.io/github/license/drevops/renovate-circleci-drupal-example)
+[![CircleCI](https://dl.circleci.com/status-badge/img/gh/drevops/renovate-drupal-example/tree/main.svg?style=shield)](https://dl.circleci.com/status-badge/redirect/gh/drevops/renovate-drupal-example/tree/main)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/drevops/renovate-drupal-example)
+![LICENSE](https://img.shields.io/github/license/drevops/renovate-drupal-example)
 
 ## Features
 1. 2 schedules:
@@ -34,6 +34,8 @@ Renovate can run as hosted GitHub app or as a standalone service in your CI prov
 
 1. Copy `renovate.json` to your repository.
 2. Copy jobs from `.circleci/config.yml` to your CI config.
+   a. Update `RENOVATE_REPOSITORIES` with the name of your repository.
+   b. Update cron schedule to run as often as you like (once or twise a day).
 3. Create GitHub read/write access token and add it as a value for `RENOVATE_TOKEN` environment variable in CircleCI UI. This is used to submit PRs and update Renovate dashboard issues.
 4. Create GitHub read-only access token and add it as a value for `GITHUB_COM_TOKEN` environment variable in CircleCI UI. This is used to overcome GitHub API rate limit when Renovate downloads information aboout your packages.
 
