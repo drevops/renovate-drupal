@@ -26,6 +26,7 @@
             "matchDatasources": ["packagist"],
             "matchUpdateTypes": ["major"],
             "matchPackageNames": [
+                "php",
                 "drupal/core-composer-scaffold",
                 "drupal/core-project-message",
                 "drupal/core-recommended",
