@@ -5,13 +5,18 @@
 
 ## Features
 1. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
-2. 2 schedules: 
-   1. Minor and patch versions for critical Drupal core and related packages to 
+2. 2 schedules:
+   1. Minor and patch versions for critical Drupal core and related packages to
       run daily raised in `deps/minor-patch-core` branch.
-   2. All versions for all other packages to run weekly raised in 
+   2. Minor and patch for all other packages to run weekly raised in
       `deps/all-contrib` branch.
 2. Add a custom label `dependencies` on PR creation.
 3. Add assignees on PR creation.
+
+## Installation
+
+1. Copy jobs from `.circleci/config.yml` to your CI config
+2. Create GitHub access token and add it as a value for `RENOVATE_TOKEN` environment variable in CircleCI UI.
 
 ## Expected minor and patch updates for core
 
@@ -21,7 +26,7 @@
   - drupal/core-recommended	(9.3.12 -> 9.3.13)
 ```
 
-## Expected major, minor and patch updates for contribs
+## Expected minor and patch updates for contribs
 
 ```
   - drevops/renovate-example-source (1.0.0 => 1.0.4)
@@ -35,6 +40,11 @@
   - drevops/renovate-example-source2 (1.0.0 => 1.2.0)
   - drupal/coffee (1.0.0 => 1.2.0)
   - vlucas/phpdotenv (v5.0.0 => v5.4.1)
-  - drush/drush (10.* => 11.*)
-  - drevops/renovate-example-source3 (1.* => 3.*)
+```
+
+Should not update
+
+```
+  - drush/drush (10.* => 11.*) - Drush updates are excluded
+  - drevops/renovate-example-source3 (1.* => 3.*) - Major versions are updated manually
 ```
