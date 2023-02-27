@@ -12,7 +12,8 @@
       `deps/all-contrib` branch.
 2. Add a custom label `dependencies` on PR creation.
 3. Add assignees on PR creation.
-4. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
+4. GitHub Action configuration to run a RenovateBot self-hosted instance (optionally).
+5. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
 
 ## Installation
 
@@ -22,6 +23,12 @@ Renovate can run as hosted GitHub app or as a standalone service in your CI prov
 
 1. Copy `renovate.json` to your repository.
 2. Follow steps in [the official Renovate docs](https://docs.renovatebot.com/getting-started/installing-onboarding/).
+
+### Self-hosted on GitHub actions
+
+1. Copy `renovate.json` to your repository.
+2. Copy `.github/workflows/renovate.yml` to your repository.
+3. Create GitHub read/write access token and add it as a value for `RENOVATE_TOKEN` environment variable in GitHub Secrets.
 
 ### Self-hosted on CircleCI
 
