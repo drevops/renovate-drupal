@@ -10,16 +10,8 @@
     "enabledManagers": ["composer"],
     "packageRules": [
         {
-            "groupName": "Minor and Patch Core",
-            "groupSlug": "minor-patch-core",
-            "schedule": ["before 2am"],
-            "matchDatasources": ["packagist"],
-            "matchUpdateTypes": ["patch", "minor"],
-            "matchPackageNames": [
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-recommended"
-            ]
+            "matchPackageNames": ["php"],
+            "enabled": false
         },
         {
             "groupName": "Major all - skipped to update manually",
@@ -35,11 +27,21 @@
             "separateMinorPatch": false,
             "matchPackagePatterns": [".*"],
             "excludePackageNames": [
-                "php",
                 "drupal/core-composer-scaffold",
                 "drupal/core-project-message",
-                "drupal/core-recommended",
-                "drush/drush"
+                "drupal/core-recommended"
+            ]
+        },
+        {
+            "groupName": "Minor and Patch Core",
+            "groupSlug": "minor-patch-core",
+            "schedule": ["before 2am"],
+            "matchDatasources": ["packagist"],
+            "matchUpdateTypes": ["patch", "minor"],
+            "matchPackageNames": [
+                "drupal/core-composer-scaffold",
+                "drupal/core-project-message",
+                "drupal/core-recommended"
             ]
         }
     ]
