@@ -1,7 +1,7 @@
 {
     "extends": ["config:base"],
     "branchPrefix": "deps/",
-    "labels": ["dependencies", "Dependencies"],
+    "labels": ["dependencies"],
     "assignees": [
         "AlexSkrypnyk"
     ],
@@ -22,25 +22,20 @@
             ]
         },
         {
-            "groupName": "Major Core - skipped to update manually",
+            "groupName": "Major all - skipped to update manually",
             "matchDatasources": ["packagist"],
             "matchUpdateTypes": ["major"],
-            "matchPackageNames": [
-                "php",
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-recommended",
-                "drush/drush"
-            ],
+            "matchPackagePatterns": [".*"],
             "enabled": false
         },
         {
-            "groupName": "All Contrib",
-            "groupSlug": "all-contrib",
+            "groupName": "Minor and Patch Contrib",
+            "groupSlug": "minor-patch-contrib",
             "matchDatasources": ["packagist"],
-            "separateMajorMinor": false,
+            "separateMinorPatch": false,
             "matchPackagePatterns": [".*"],
             "excludePackageNames": [
+                "php",
                 "drupal/core-composer-scaffold",
                 "drupal/core-project-message",
                 "drupal/core-recommended",

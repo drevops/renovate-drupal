@@ -1,5 +1,5 @@
 {
-  "name": "renovate-circleci-drupal-example",
+  "name": "renovate-drupal-example",
   "version": "1.0.0",
   "description": "Example to run Renovate bot on a Drupal project.",
   "dependencies": {

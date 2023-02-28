@@ -13,7 +13,7 @@ jobs:
           RENOVATE_DEPENDENCY_DASHBOARD: true
           RENOVATE_DEPENDENCY_DASHBOARD_TITLE: 'RenovateBot Dependency Dashboard (self-hosted)'
           RENOVATE_GIT_AUTHOR: 'RenovateBot Self Hosted <renovatebot@drevops.com>'
-          RENOVATE_REPOSITORIES: 'drevops/renovate-circleci-drupal-example'
+          RENOVATE_REPOSITORIES: 'drevops/renovate-drupal-example'
           RENOVATE_DRY_RUN: false
           LOG_LEVEL: debug
     steps:
@@ -33,7 +33,7 @@ workflows:
   renovatebot:
     triggers:
       - schedule:
-          cron: "15 * * * *"
+          cron: "15 * * * *" # Triggers every hour for demonstration purposes. Change this schedule to a daily run.
           filters:
             branches:
               only:
