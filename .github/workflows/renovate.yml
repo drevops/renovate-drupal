@@ -10,7 +10,7 @@ jobs:
         uses: actions/checkout@v3.3.0
       - uses: suzuki-shunsuke/github-action-renovate-config-validator@v0.1.2
       - name: Self-hosted Renovate
-        uses: renovatebot/github-action@v34.152.5
+        uses: renovatebot/github-action@v34.154.1
         env:
           # Update the value of RENOVATE_GIT_AUTHOR with your own.
           RENOVATE_GIT_AUTHOR: 'RenovateBot Self Hosted <renovatebot@drevops.com>'
