@@ -8,9 +8,6 @@
     "ignorePresets": [":prHourlyLimit2"],
     "rangeStrategy": "update-lockfile",
     "enabledManagers": ["composer"],
-    "constraints": {
-        "php": "8.1"
-    },
     "packageRules": [
         {
             "matchPackageNames": ["php"],
