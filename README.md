@@ -1,4 +1,4 @@
-# Self-hosted RenovateBot for Drupal
+# Renovate configuration for automated Drupal dependency updates.
 
 ![GitHub release (latest by date)](https://img.shields.io/github/v/release/drevops/renovate-drupal-example)
 ![LICENSE](https://img.shields.io/github/license/drevops/renovate-drupal-example)
@@ -6,15 +6,13 @@
 ![GitHub Actions](https://github.com/drevops/renovate-drupal-example/actions/workflows/renovate.yml/badge.svg)
 
 ## Features
-1. 2 schedules:
-   1. Minor and patch versions for critical Drupal core and related packages to
-      run daily raised in `deps/minor-patch-core` branch.
-   2. Minor and patch for all other packages to run weekly raised in
-      `deps/all-contrib` branch.
-2. Add a custom label `dependencies` on PR creation.
-3. Add assignees on PR creation.
-4. GitHub Action configuration to run a RenovateBot self-hosted instance (optionally).
-5. CircleCI configuration to run a RenovateBot self-hosted instance (optionally).
+1. Dual schedules for package updates:
+   - Daily update schedule for critical Drupal core and related packages created in the `deps/minor-patch-core` branch.
+   - Weekly update schedule for all other packages created in the `deps/minor-patch-contrib` branch.
+2. Automatically adds a `dependencies` label to a pull request.
+3. Automatically adds assignees to a pull request.
+4. Optional configuration for running Renovate self-hosted instance using GitHub Actions.
+5. Optional configuration for running Renovate self-hosted instance using CircleCI.
 
 ## Installation
 
