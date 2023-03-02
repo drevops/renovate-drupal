@@ -6,7 +6,7 @@ version: 2
 jobs:
   renovatebot:
     docker:
-      - image: renovate/renovate:34.146.0
+      - image: renovate/renovate
         environment:
           # Update the value of RENOVATE_GIT_AUTHOR with your own.
           RENOVATE_GIT_AUTHOR: 'Renovate Self Hosted <renovatebot@drevops.com>'
