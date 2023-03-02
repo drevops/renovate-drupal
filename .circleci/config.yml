@@ -35,7 +35,7 @@ workflows:
   renovatebot:
     triggers:
       - schedule:
-          cron: "15 * * * *" # Triggers every hour for demonstration purposes. Change this schedule to a daily run.
+          cron: "5,20,35,50 * * * *" # Triggers every hour for demonstration purposes. Change this schedule to a daily run.
           filters:
             branches:
               only:
