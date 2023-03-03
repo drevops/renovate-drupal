@@ -1,8 +1,0 @@
-{
-  "name": "renovate-circleci-drupal-example",
-  "version": "1.0.0",
-  "description": "Example to run Renovate bot on a Drupal project.",
-  "dependencies": {
-    "eslint": "^6"
-  }
-}
