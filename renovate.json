@@ -1,7 +1,7 @@
 {
     "extends": ["config:base"],
     "branchPrefix": "deps/",
-    "labels": ["dependencies", "Dependencies"],
+    "labels": ["dependencies"],
     "assignees": [
         "AlexSkrypnyk"
     ],
