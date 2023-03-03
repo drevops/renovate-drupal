@@ -6,14 +6,16 @@ version: 2
 jobs:
   renovatebot:
     docker:
-      - image: renovate/renovate:latest
+      - image: renovate/renovate:34.154.4
         environment:
+          # Update the value of RENOVATE_GIT_AUTHOR with your own.
+          RENOVATE_GIT_AUTHOR: 'Renovate Self Hosted <renovatebot@drevops.com>'
+          # Update the value of RENOVATE_REPOSITORIES with your own repository name.
+          RENOVATE_REPOSITORIES: 'drevops/renovate-drupal'
+          RENOVATE_DEPENDENCY_DASHBOARD_TITLE: 'Renovate Dependency Dashboard (self-hosted) by CircleCI'
+          RENOVATE_DEPENDENCY_DASHBOARD: true
           RENOVATE_PLATFORM: 'github'
           RENOVATE_AUTODISCOVER: false
-          RENOVATE_DEPENDENCY_DASHBOARD: true
-          RENOVATE_DEPENDENCY_DASHBOARD_TITLE: 'RenovateBot Dependency Dashboard (self-hosted)'
-          RENOVATE_GIT_AUTHOR: 'RenovateBot Self Hosted <renovatebot@drevops.com>'
-          RENOVATE_REPOSITORIES: 'drevops/renovate-circleci-drupal-example'
           RENOVATE_DRY_RUN: false
           LOG_LEVEL: debug
     steps:
@@ -33,7 +35,7 @@ workflows:
   renovatebot:
     triggers:
       - schedule:
-          cron: "15 * * * *"
+          cron: "15 * * * *" # Triggers every hour for demonstration purposes. Change this schedule to a daily run.
           filters:
             branches:
               only:

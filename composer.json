@@ -1,10 +1,10 @@
 {
-    "name": "drevops/renovate-drupal-example",
+    "name": "drevops/renovate-drupal",
     "description": "This and accompanying lock files have deliberately outdated dependencies from different namespaces to test Renovate bot rules.",
     "authors": [
         {
             "name": "Alex Skrypnyk",
-            "email": "alex@integratedexperts.com"
+            "email": "alex@drevops.com"
         }
     ],
     "require": {
