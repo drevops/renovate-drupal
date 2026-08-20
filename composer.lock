@@ -809,16 +809,16 @@
         },
         {
             "name": "cweagans/composer-patches",
-            "version": "1.7.2",
+            "version": "1.7.3",
             "source": {
                 "type": "git",
                 "url": "https://github.com/cweagans/composer-patches.git",
-                "reference": "e9969cfc0796e6dea9b4e52f77f18e1065212871"
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e9969cfc0796e6dea9b4e52f77f18e1065212871",
-                "reference": "e9969cfc0796e6dea9b4e52f77f18e1065212871",
+                "url": "https://api.github.com/repos/cweagans/composer-patches/zipball/e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
+                "reference": "e190d4466fe2b103a55467dfa83fc2fecfcaf2db",
                 "shasum": ""
             },
             "require": {
@@ -851,9 +851,9 @@
             "description": "Provides a way to patch Composer packages.",
             "support": {
                 "issues": "https://github.com/cweagans/composer-patches/issues",
-                "source": "https://github.com/cweagans/composer-patches/tree/1.7.2"
+                "source": "https://github.com/cweagans/composer-patches/tree/1.7.3"
             },
-            "time": "2022-01-25T19:21:20+00:00"
+            "time": "2022-12-20T22:53:13+00:00"
         },
         {
             "name": "dflydev/dot-access-data",
@@ -1009,16 +1009,16 @@
         },
         {
             "name": "drevops/renovate-example-source",
-            "version": "1.0.0",
+            "version": "1.0.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drevops/renovate-example-source.git",
-                "reference": "22bf41385121befeb05d56a73f5c760a1206052d"
+                "reference": "078ee43da24f2fb2954c09359f822394e9246d7a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drevops/renovate-example-source/zipball/22bf41385121befeb05d56a73f5c760a1206052d",
-                "reference": "22bf41385121befeb05d56a73f5c760a1206052d",
+                "url": "https://api.github.com/repos/drevops/renovate-example-source/zipball/078ee43da24f2fb2954c09359f822394e9246d7a",
+                "reference": "078ee43da24f2fb2954c09359f822394e9246d7a",
                 "shasum": ""
             },
             "type": "library",
@@ -1032,22 +1032,22 @@
             "description": "A test package to test Renovate config. Used to trigger release updates.",
             "support": {
                 "issues": "https://github.com/drevops/renovate-example-source/issues",
-                "source": "https://github.com/drevops/renovate-example-source/tree/1.0.0"
+                "source": "https://github.com/drevops/renovate-example-source/tree/1.0.4"
             },
-            "time": "2022-04-22T05:22:49+00:00"
+            "time": "2022-05-02T10:16:27+00:00"
         },
         {
             "name": "drevops/renovate-example-source2",
-            "version": "1.0.0",
+            "version": "1.2.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drevops/renovate-example-source2.git",
-                "reference": "42fa331a887d1a67db93e827d90158ffc5399851"
+                "reference": "e09001af53c9b5f1227225f8b754b6f93bbbb49a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drevops/renovate-example-source2/zipball/42fa331a887d1a67db93e827d90158ffc5399851",
-                "reference": "42fa331a887d1a67db93e827d90158ffc5399851",
+                "url": "https://api.github.com/repos/drevops/renovate-example-source2/zipball/e09001af53c9b5f1227225f8b754b6f93bbbb49a",
+                "reference": "e09001af53c9b5f1227225f8b754b6f93bbbb49a",
                 "shasum": ""
             },
             "type": "library",
@@ -1061,23 +1061,23 @@
             "description": "A test package to test Renovate config. Used to trigger release updates.",
             "support": {
                 "issues": "https://github.com/drevops/renovate-example-source2/issues",
-                "source": "https://github.com/drevops/renovate-example-source2/tree/1.0.0"
+                "source": "https://github.com/drevops/renovate-example-source2/tree/1.2.0"
             },
-            "time": "2022-04-22T05:28:41+00:00"
+            "time": "2022-05-02T10:15:59+00:00"
         },
         {
             "name": "drupal/coffee",
-            "version": "2.0.0",
+            "version": "2.0.1",
             "source": {
                 "type": "git",
                 "url": "https://git.drupalcode.org/project/coffee.git",
-                "reference": "2.0.0"
+                "reference": "2.0.1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://ftp.drupal.org/files/projects/coffee-2.0.0.zip",
-                "reference": "2.0.0",
-                "shasum": "e18bf87d466e4c8213a2dff51449caad6728394e"
+                "url": "https://ftp.drupal.org/files/projects/coffee-2.0.1.zip",
+                "reference": "2.0.1",
+                "shasum": "cc19f67fbf48c5946f8053093e100cbd07e96167"
             },
             "require": {
                 "drupal/core": "^10.2 || ^11.0"
@@ -1085,8 +1085,8 @@
             "type": "drupal-module",
             "extra": {
                 "drupal": {
-                    "version": "2.0.0",
-                    "datestamp": "1731340397",
+                    "version": "2.0.1",
+                    "datestamp": "1736247807",
                     "security-coverage": {
                         "status": "covered",
                         "message": "Covered by Drupal's security advisory policy"
@@ -6623,39 +6623,43 @@
         },
         {
             "name": "vlucas/phpdotenv",
-            "version": "v5.4.1",
+            "version": "v5.6.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/vlucas/phpdotenv.git",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f"
+                "reference": "416df702837983f8d5ff48c9c3fee4f5f57b980b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/264dce589e7ce37a7ba99cb901eed8249fbec92f",
-                "reference": "264dce589e7ce37a7ba99cb901eed8249fbec92f",
+                "url": "https://api.github.com/repos/vlucas/phpdotenv/zipball/416df702837983f8d5ff48c9c3fee4f5f57b980b",
+                "reference": "416df702837983f8d5ff48c9c3fee4f5f57b980b",
                 "shasum": ""
             },
             "require": {
                 "ext-pcre": "*",
-                "graham-campbell/result-type": "^1.0.2",
-                "php": "^7.1.3 || ^8.0",
-                "phpoption/phpoption": "^1.8",
-                "symfony/polyfill-ctype": "^1.23",
-                "symfony/polyfill-mbstring": "^1.23.1",
-                "symfony/polyfill-php80": "^1.23.1"
+                "graham-campbell/result-type": "^1.1.4",
+                "php": "^7.2.5 || ^8.0",
+                "phpoption/phpoption": "^1.9.5",
+                "symfony/polyfill-ctype": "^1.26",
+                "symfony/polyfill-mbstring": "^1.26",
+                "symfony/polyfill-php80": "^1.26"
             },
             "require-dev": {
-                "bamarni/composer-bin-plugin": "^1.4.1",
+                "bamarni/composer-bin-plugin": "^1.8.2",
                 "ext-filter": "*",
-                "phpunit/phpunit": "^7.5.20 || ^8.5.21 || ^9.5.10"
+                "phpunit/phpunit": "^8.5.34 || ^9.6.13 || ^10.4.2"
             },
             "suggest": {
                 "ext-filter": "Required to use the boolean validator."
             },
             "type": "library",
             "extra": {
+                "bamarni-bin": {
+                    "bin-links": true,
+                    "forward-command": false
+                },
                 "branch-alias": {
-                    "dev-master": "5.4-dev"
+                    "dev-master": "5.6-dev"
                 }
             },
             "autoload": {
@@ -6687,7 +6691,7 @@
             ],
             "support": {
                 "issues": "https://github.com/vlucas/phpdotenv/issues",
-                "source": "https://github.com/vlucas/phpdotenv/tree/v5.4.1"
+                "source": "https://github.com/vlucas/phpdotenv/tree/v5.6.4"
             },
             "funding": [
                 {
@@ -6699,7 +6703,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2021-12-12T23:22:04+00:00"
+            "time": "2026-07-06T19:11:50+00:00"
         },
         {
             "name": "webflo/drupal-finder",
@@ -8042,16 +8046,16 @@
         },
         {
             "name": "drupal/core-dev",
-            "version": "11.3.2",
+            "version": "11.4.5",
             "source": {
                 "type": "git",
                 "url": "https://github.com/drupal/core-dev.git",
-                "reference": "4c7675b0c984d812ec8ca0e3181f392a4f4cf38a"
+                "reference": "5bb74f48bc401071865d90fa3492c14f0bb98321"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/drupal/core-dev/zipball/4c7675b0c984d812ec8ca0e3181f392a4f4cf38a",
-                "reference": "4c7675b0c984d812ec8ca0e3181f392a4f4cf38a",
+                "url": "https://api.github.com/repos/drupal/core-dev/zipball/5bb74f48bc401071865d90fa3492c14f0bb98321",
+                "reference": "5bb74f48bc401071865d90fa3492c14f0bb98321",
                 "shasum": ""
             },
             "require": {
@@ -8060,10 +8064,9 @@
                 "colinodell/psr-testlogger": "^1.2",
                 "composer/composer": "^2.8.1",
                 "drupal/coder": "^8.3.30",
-                "justinrainbow/json-schema": "^5.2 || ^6.5.2",
                 "lullabot/mink-selenium2-driver": "^1.7.3",
                 "lullabot/php-webdriver": "^2.0.7",
-                "mglaman/phpstan-drupal": "^1.3.9 || ^2.0.9",
+                "mglaman/phpstan-drupal": "^1.3.9 || ^2.0.15",
                 "micheh/phpcs-gitlab": "^1.1 || ^2.0",
                 "mikey179/vfsstream": "^1.6.11",
                 "open-telemetry/exporter-otlp": "^1",
@@ -8072,12 +8075,12 @@
                 "phpspec/prophecy": "^1.23",
                 "phpspec/prophecy-phpunit": "^2",
                 "phpstan/extension-installer": "^1.4.3",
-                "phpstan/phpstan": "^1.12.27 || ^2.1.26",
-                "phpstan/phpstan-phpunit": "^1.4.2 || ^2.0.7",
-                "phpunit/phpunit": "^11.5.42",
+                "phpstan/phpstan": "^1.12.27 || ^2.2.0",
+                "phpstan/phpstan-phpunit": "^1.4.2 || ^2.0.16",
+                "phpunit/phpunit": "^11.5.50",
                 "symfony/browser-kit": "^7.4",
                 "symfony/css-selector": "^7.4",
-                "symfony/dom-crawler": "^7.4",
+                "symfony/dom-crawler": "^7.4.12",
                 "symfony/error-handler": "^7.4",
                 "symfony/lock": "^7.4",
                 "symfony/var-dumper": "^7.4"
@@ -8086,15 +8089,18 @@
                 "webflo/drupal-core-require-dev": "*"
             },
             "type": "metapackage",
+            "extra": {
+                "branch-alias": []
+            },
             "notification-url": "https://packagist.org/downloads/",
             "license": [
                 "GPL-2.0-or-later"
             ],
             "description": "require-dev dependencies from drupal/drupal; use in addition to drupal/core-recommended to run tests from drupal/core.",
             "support": {
-                "source": "https://github.com/drupal/core-dev/tree/11.3.2"
+                "source": "https://github.com/drupal/core-dev/tree/11.4.5"
             },
-            "time": "2025-12-15T09:20:07+00:00"
+            "time": "2026-08-06T09:28:11+00:00"
         },
         {
             "name": "drupal/drupal-driver",
