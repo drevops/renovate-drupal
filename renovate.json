@@ -1,11 +1,12 @@
 {
-    "extends": ["config:base"],
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["config:recommended"],
     "branchPrefix": "deps/",
     "labels": ["dependencies"],
     "assignees": [
         "AlexSkrypnyk"
     ],
-    "ignorePresets": [":prHourlyLimit2"],
+    "prHourlyLimit": 0,
     "rangeStrategy": "update-lockfile",
     "timezone": "Australia/Melbourne",
     "enabledManagers": ["composer"],
@@ -18,7 +19,6 @@
             "groupName": "Major all - skipped to update manually",
             "matchDatasources": ["packagist"],
             "matchUpdateTypes": ["major"],
-            "matchPackagePatterns": [".*"],
             "enabled": false
         },
         {
@@ -26,11 +26,10 @@
             "groupSlug": "minor-patch-contrib",
             "matchDatasources": ["packagist"],
             "separateMinorPatch": false,
-            "matchPackagePatterns": [".*"],
-            "excludePackageNames": [
-                "drupal/core-composer-scaffold",
-                "drupal/core-project-message",
-                "drupal/core-recommended"
+            "matchPackageNames": [
+                "!drupal/core-composer-scaffold",
+                "!drupal/core-project-message",
+                "!drupal/core-recommended"
             ]
         },
         {

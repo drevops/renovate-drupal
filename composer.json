@@ -1,6 +1,7 @@
 {
     "name": "drevops/renovate-drupal",
     "description": "This and accompanying lock files have deliberately outdated dependencies from different namespaces to test Renovate bot rules.",
+    "license": "GPL-3.0-or-later",
     "authors": [
         {
             "name": "Alex Skrypnyk",
@@ -8,14 +9,14 @@
         }
     ],
     "require": {
-        "php": ">=8.1",
-        "composer/installers": "^1.9",
+        "php": ">=8.3",
+        "composer/installers": "^2",
         "cweagans/composer-patches": "^1.7",
-        "drupal/coffee": "^1",
-        "drupal/core-composer-scaffold": "^9",
-        "drupal/core-project-message": "^9",
-        "drupal/core-recommended": "^9",
-        "drush/drush": "^10",
+        "drupal/coffee": "^2",
+        "drupal/core-composer-scaffold": "^11",
+        "drupal/core-project-message": "^11",
+        "drupal/core-recommended": "^11",
+        "drush/drush": "^13",
         "oomphinc/composer-installers-extender": "^2.0",
         "vlucas/phpdotenv": "^5.1",
         "webflo/drupal-finder": "^1.2",
@@ -23,9 +24,9 @@
         "drevops/renovate-example-source2": "^1"
     },
     "require-dev": {
-        "dealerdirect/phpcodesniffer-composer-installer": "^0.7",
-        "drupal/core-dev": "^9",
-        "drupal/drupal-extension": "^4",
+        "dealerdirect/phpcodesniffer-composer-installer": "^1",
+        "drupal/core-dev": "^11",
+        "drupal/drupal-extension": "^6",
         "drevops/renovate-example-source3": "^1"
     },
     "conflict": {
@@ -39,16 +40,23 @@
     },
     "config": {
         "platform": {
-            "php": "8.1.0"
+            "php": "8.3.0"
         },
         "allow-plugins": {
             "cweagans/composer-patches": true,
             "drupal/core-composer-scaffold": true,
             "drupal/core-project-message": true,
             "composer/installers": true,
-            "zaporylie/composer-drupal-optimizations": true,
             "dealerdirect/phpcodesniffer-composer-installer": true,
-            "oomphinc/composer-installers-extender": true
+            "oomphinc/composer-installers-extender": true,
+            "php-http/discovery": true,
+            "phpstan/extension-installer": true,
+            "tbachert/spi": true
+        },
+        "policy": {
+            "advisories": {
+                "block": false
+            }
         }
     },
     "extra": {

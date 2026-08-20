@@ -2,11 +2,12 @@
 # Renovate Bot self-hosted instance configuration for CircleCI.
 #
 # Add RENOVATE_TOKEN as an environment variable with GitHub access token in UI.
-version: 2
-jobs:
-  renovatebot:
+version: 2.1
+
+executors:
+  renovate:
     docker:
-      - image: renovate/renovate:34.154.4
+      - image: renovate/renovate:44.35.2
         environment:
           # Update the value of RENOVATE_GIT_AUTHOR with your own.
           RENOVATE_GIT_AUTHOR: 'Renovate Self Hosted <renovatebot@drevops.com>'
@@ -16,18 +17,31 @@ jobs:
           RENOVATE_DEPENDENCY_DASHBOARD: true
           RENOVATE_PLATFORM: 'github'
           RENOVATE_AUTODISCOVER: false
-          RENOVATE_DRY_RUN: false
           LOG_LEVEL: debug
+
+jobs:
+  renovatebot:
+    executor: renovate
+    steps:
+      - checkout
+      - run: renovate-config-validator
+      - run: renovate
+
+  # Validates the configuration and previews the updates without creating
+  # branches or pull requests.
+  renovatebot-dry-run:
+    executor: renovate
+    environment:
+      RENOVATE_DRY_RUN: 'full'
     steps:
       - checkout
       - run: renovate-config-validator
       - run: renovate
 
 workflows:
-  version: 2
   feature:
     jobs:
-      - renovatebot:
+      - renovatebot-dry-run:
           filters:
             branches:
               only: /feature\/.+/
