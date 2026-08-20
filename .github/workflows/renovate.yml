@@ -1,7 +1,9 @@
 name: Renovate
 on:
   schedule:
-    - cron: '45 11,23 * * *'
+    # 14:45 UTC is 00:45/01:45 in Australia/Melbourne, inside the core group's
+    # 'before 2am' schedule window in renovate.json.
+    - cron: '45 14,23 * * *'
   workflow_dispatch:
 jobs:
   renovate:
